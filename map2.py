@@ -5,7 +5,7 @@ from streamlit_folium import st_folium
 
 st.set_page_config(layout="wide")
 
-st.title("خريطة المباني")
+st.title("خريطة العدادات الذكية")
 
 # ----------------------------------
 # قراءة الملف
@@ -65,4 +65,5 @@ for _, row in df.iterrows():
 # ----------------------------------
 # عرض الخريطة داخل Streamlit
 # ----------------------------------
+
 st_folium(m, width=1200, height=600)
